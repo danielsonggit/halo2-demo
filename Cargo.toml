@@ -1,0 +1,22 @@
+[package]
+name = "halo2-demo"
+version = "0.1.0"
+edition = "2024"
+
+
+[features]
+dev-graph = [
+    "halo2_proofs/dev-graph",
+    "plotters",
+    "plotters/bitmap_backend",
+    "plotters/bitmap_encoder",
+]
+
+[dependencies]
+halo2_proofs = { git = "https://github.com/zcash/halo2.git", version = "0.3" }
+plotters = { version = "0.3.0", default-features = true, optional = true }
+tabbycat = { version = "0.1", features = ["attributes"], optional = true }
+
+
+[dependencies.pasta_curves]
+version = "0.5"

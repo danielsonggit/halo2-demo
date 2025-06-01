@@ -1,0 +1,11 @@
+[toolchain]
+channel = "stable"
+components = ["rustfmt", "clippy"]
+targets = ["x86_64-unknown-linux-gnu"]
+
+# Rust版本信息
+# rustc 1.86.0 (05f9846f8 2025-03-31)
+# cargo 1.86.0 (adf9b6ad1 2025-02-28)
+# 
+# 此文件确保项目使用一致的Rust工具链版本
+# 当其他开发者克隆此项目时，rustup会自动安装匹配的工具链
